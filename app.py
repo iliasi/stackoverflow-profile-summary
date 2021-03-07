@@ -18,7 +18,7 @@ local_css("style.css")
 with st.sidebar:
     st.subheader('Enter Stack Overflow User ID:')
     userId = st.text_input('')
-    if not userId.isdigit():
+    if userId and (not userId.isdigit()):
         st.error("User ID must be digits only!")
     
 # Code for the profile info display page
