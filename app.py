@@ -43,7 +43,12 @@ if userId:
     gold = badges['gold']
     silver = badges['silver']
     bronze = badges['bronze']
-    percentile = soup.find('b').get_text()
+
+    #check if user is ranked
+    if soup.find('b'):
+        percentile = soup.find('b').get_text()
+    else :
+        percentile = '0%'
 
     #Display user details in main page
     st.image(image_url)
