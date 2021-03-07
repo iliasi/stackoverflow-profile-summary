@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+body h1{
+    color: rgb(82, 82, 165);
+    
+}
+body p {
+    color: black;
+    font-size:20px;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#top {
+    border: 2px solid #4F8BF9;
+    width: fit-content;
+    padding: 5px;
+    color: #4F8BF9;
+    font-size: 15px;
+}
+
+#gold {
+    color: gold;
+}
+
+#silver {
+    color: silver;
+}
+
+#bronze {
+    color: #cd7f32;
+}
+
+.stTextInput>div>div>input {
+    color: #4F8BF9;
+}
+.big-font {
+    
+    
+}
