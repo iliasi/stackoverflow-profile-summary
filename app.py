@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 
 #set page title
-st.title('Stackoverflow Profile Summary')
+st.title('Stack Overflow Profile Summary')
 
 #load local css file for styling
 def local_css(file_name):
@@ -16,7 +16,7 @@ local_css("style.css")
 
 # Code for the sidebar text input
 with st.sidebar:
-    st.subheader('Enter Stackoverflow User ID:')
+    st.subheader('Enter Stack Overflow User ID:')
     userId = st.text_input('')
     
 # Code for the profile info display page
@@ -67,6 +67,6 @@ if userId:
         st.info("A profile with that User ID is not found!")
     
 else :
-    st.info("Please enter Stackoverflow UserId in the left input box")
+    st.info("Please enter Stack Overflow UserId in the left input box")
 
 
