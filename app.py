@@ -20,7 +20,7 @@ with st.sidebar:
     userId = st.text_input('')
     
 # Code for the profile info display page
-if userId:
+if userId && !userIdstring.isalpha():
     BASEURL = "https://api.stackexchange.com/2.2/users/"+userId
     params = {
     "site" : "stackoverflow"
