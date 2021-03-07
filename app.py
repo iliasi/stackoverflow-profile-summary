@@ -20,7 +20,7 @@ with st.sidebar:
     userId = st.text_input('')
     
 # Code for the profile info display page
-if userId and (userIdstring.isalpha() = false):
+if userId and (userId.isalpha() == False):
     BASEURL = "https://api.stackexchange.com/2.2/users/"+userId
     params = {
     "site" : "stackoverflow"
@@ -67,6 +67,6 @@ if userId and (userIdstring.isalpha() = false):
         st.info("A profile with that User ID is not found!")
     
 else :
-    st.info("Please enter Stack Overflow UserId in the left input box")
+    st.info("Please enter Stack Overflow UserId (digit only) in the left input box")
 
 
