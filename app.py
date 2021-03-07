@@ -18,11 +18,11 @@ local_css("style.css")
 with st.sidebar:
     st.subheader('Enter Stack Overflow User ID:')
     userId = st.text_input('')
-    if userId.isalpha():
+    if not userId.isdigit():
         st.error("User ID must be digits only!")
     
 # Code for the profile info display page
-if userId and (userId.isalpha() == False):
+if userId and userId.isdigit():
     BASEURL = "https://api.stackexchange.com/2.2/users/"+userId
     params = {
     "site" : "stackoverflow"
